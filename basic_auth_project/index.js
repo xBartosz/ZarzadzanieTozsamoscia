@@ -31,7 +31,7 @@ function authentication(req, res, next) {
 
 }
 
-// Uwierzytelnienie oraz wyświetlenie strony pod wskazaną ścieżką
+// Uwierzytelnienie oraz wyświetlenie strony ze wskazanej ścieżki
 app.use(authentication)
 app.use(express.static(path.join(__dirname, 'public')));
 
