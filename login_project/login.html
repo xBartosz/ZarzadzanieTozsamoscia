@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Sekcja head, a w niej tytuł podpięcie pliku css oraz dodanie linku do ikon ("Font awesome icons") -->
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- Utworzenie sekcji body, a w nim divy oraz formularz logowania -->
+<body>
+  
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+
+    <form id="login-form">
+
+      <i class="fa-regular fa-user fa-lg">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      </i>
+      <i class="fa fa-lock fa-lg">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      </i>
+
+      <button type="submit" class="button-login" id="login-form-submit">Login</button>
+    </form>
+    <div id="login-error-msg-holder">
+      <div id="login-error-msg">
+      </div>
+    </div>
+  </main>
+
+  
+<!-- Podpięcie skryptu -->
+<script src="login.js">
+</script>
+</body>
+</html>
